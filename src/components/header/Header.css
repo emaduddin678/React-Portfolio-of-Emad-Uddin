@@ -1,0 +1,115 @@
+header {
+  /* height: 100vh; */
+  padding-top: 7rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__container {
+  text-align: center;
+  /* height: 100%; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5rem;
+  flex: 1;
+}
+
+/* =========== CTA ============  */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/* ============= Social ==============  */
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: -5rem;
+  bottom: 3rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/* ============ Me ==============  */
+.me {
+  background: linear-gradient(#48b6ff88, transparent);
+  width: 20rem;
+  /* height: 30rem; */
+  /* position: absolute; */
+  left: calc(50% - 11rem);
+  /* margin-top: 4rem; */
+  border-radius: 5rem 0 0 5rem;
+  /* margin: 5rem auto; */
+  overflow: hidden;
+  margin: 0 auto;
+  /* flex: 1; */
+}
+
+.me img {
+  height: 100%;
+  filter: brightness(80%);
+}
+
+/* =========== scroll down =======  */
+.scroll__down {
+  position: absolute;
+  bottom: 0;
+  left: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scroll__down:hover {
+  transform: translateY(4px);
+}
+
+/* ========== medium device =========  */
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+  }
+
+  .header__container {
+    margin: 0;
+  }
+  .header__socials {
+    left: 2rem;
+    bottom: -25rem;
+  }
+
+  .scroll__down {
+    bottom: -28rem;
+  }
+  .me {
+    border-radius: 10rem 10rem 1rem 1rem;
+    margin-top: 2rem;
+  }
+}
+/* =========== small device ==========  */
+@media screen and (max-width: 800px) {
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+    .me{
+      width: 15rem;
+    }
+}
