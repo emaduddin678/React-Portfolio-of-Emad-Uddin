@@ -7,8 +7,8 @@
   flex: 1;
 }
 .about__container > div:first-child img {
-  filter: brightness(80%);
-  border-radius: 10rem 10rem 1rem 1rem  ;
+  filter: brightness(95%);
+  border-radius: 0 1rem 1rem 0  ;
 }
 
 .about__container > div:last-child {

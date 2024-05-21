@@ -52,7 +52,7 @@ header {
   /* position: absolute; */
   left: calc(50% - 11rem);
   /* margin-top: 4rem; */
-  border-radius: 5rem 0 0 5rem;
+  border-radius: 1rem 0 0 1rem;
   /* margin: 5rem auto; */
   overflow: hidden;
   margin: 0 auto;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import ME from "../../assets/Emad-removebg.png";
+import ME from "../../assets/emad-iP.jpeg";
 
 function About() {
   return (
