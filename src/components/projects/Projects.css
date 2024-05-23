@@ -6,8 +6,8 @@
 
 .portfolio_item {
   background: var(--color-bg-variant);
-  padding: 1.3rem;
-  border-radius: 2rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
   border: 1px solid transparent;
   transition: var(--transition);
 }
@@ -18,21 +18,15 @@
 }
 
 .portfolio_item-img {
-  border-radius: 1.5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
-  height: 8rem;
+  height: 12rem;
 }
 
 .portfolio_item h3 {
-  margin: 1.2rem 0 2rem;
+  margin: 1rem 0 1.25rem;
 }
 
-.portfolio_item-cta {
-  display: flex;
-  /* gap: 1rem; */
-  justify-content: space-around;
-  margin-bottom: 1rem;
-}
 
 @media screen and (max-width: 991px) {
     .portfolio__container{

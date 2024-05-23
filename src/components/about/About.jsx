@@ -16,28 +16,33 @@ function About() {
         </div>
         <div className="about__content">
           <p>
-            Hi, I'm Emad Uddin Emad, a passionate and dedicated student pursuing
-            a B.Sc. in Computer Science and Engineering at Mohammadpur Kendriya
-            College. I have a strong interest in web development, particularly
-            in front-end technologies such as React.
+            Hi, I'm Emad Uddin Emad, a passionate and dedicated Frontend-focused
+            MERN Stack Developer. As a Computer Science student with a deep
+            interest in technology, I began my journey in web development in
+            January 2022.
           </p>
           <br />
 
           <p>
-            Through a combination of online resources, including YouTube
-            tutorials and other learning platforms, I have acquired a
-            comprehensive understanding of HTML5, CSS3, and JavaScript. My focus
-            has been on mastering React.js and its core principles, utilizing it
-            to build dynamic web interfaces. After that, I will start learning
-            Node.js, Express.js, and MongoDB Database for the backend because I
-            want to be a MERN Stack developer.
+            Through a combination of online resources, such as YouTube tutorials
+            and various learning platforms, I have acquired the skills of
+            front-end and back-end development.
+          </p>
+          <p>
+            My core frontend skills include HTML, CSS, Tailwind CSS, Bootstrap,
+            JavaScript, React.js, Redux, and Next.js. On the backend, I possess
+            intermediate-level expertise in Node.js, Express.js, and MongoDB. I
+            also have knowledge of Firebase authentication and JWT (JSON Web
+            Tokens). Additionally, I am proficient with various UI design
+            libraries and packages such as AOS, Ant Design, Chakra UI, and Material UI. I am
+            well-versed in tools like React Router and React Hook Form. 
           </p>
           <br />
-        
+
           <p>
-            I am currently seeking an internship opportunity to enhance my
-            skills in React.js development. If you have any questions or would
-            like to connect, feel free to reach out to me.
+            I am passionate about continuously learning new languages and
+            frameworks. In today's fast-paced tech world, staying updated is
+            essential for growth and innovation.
           </p>
         </div>
       </div>

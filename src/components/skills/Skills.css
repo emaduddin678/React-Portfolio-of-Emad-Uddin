@@ -27,7 +27,7 @@
 .skill_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .skill__details {
