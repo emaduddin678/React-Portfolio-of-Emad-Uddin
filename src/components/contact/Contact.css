@@ -7,8 +7,8 @@
 }
 
 .contact__options {
-    display: flex;
-    flex-direction: column;
+    display: flex ;
+    flex-direction: column ;
     gap: 1.2rem;
 }
 
@@ -47,7 +47,7 @@ form{
 
 input, textarea{
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem !important;
     border-radius: 0.5rem;
     background: transparent ;
     border: 2px solid var(--color-primary-variant);

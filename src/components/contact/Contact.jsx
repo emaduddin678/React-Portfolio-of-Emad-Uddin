@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { FiMail } from "react-icons/fi";
@@ -7,28 +7,32 @@ import { BsWhatsapp } from "react-icons/bs";
 import { BiSend } from "react-icons/bi";
 
 function Contact() {
-    const form = useRef();
+  const formRef = useRef(null);
 
-    const sendEmail = (e) => {
-      e.preventDefault();
+  const [successMessage, setSuccessMessage] = useState("");
 
-      emailjs
-        .sendForm(
-          "service_3pvs0kp",
-          "template_hvf5orr",
-          form.current,
-          "46-Pkyip9VkjT4Uvf"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-      e.target.reset();   
-    };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_vse227l",
+        "template_hvf5orr",
+        formRef.current,
+        "o9kFsPb7ZZ-ieSFj_"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSuccessMessage("Your message has been sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          setSuccessMessage("Failed to send the message. Please try again.");
+        }
+      );
+    e.target.reset();
+  };
 
   return (
     <section id="contact">
@@ -37,23 +41,24 @@ function Contact() {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <FiMail />
+            <FiMail className="mx-auto" />
             <h4>Email</h4>
             <h5>emaduddin678@gmail.com</h5>
-            <a href="mailto:emaduddin678@gmail.com" target="_blank">
-              Send a message
-            </a>
+            <a href="mailto:emaduddin678@gmail.com">Send a message</a>
           </article>
           <article className="contact__option">
-            <RiMessengerLine />
+            <RiMessengerLine className="mx-auto" />
             <h4>Messenger</h4>
             <h5>Emad Uddin</h5>
-            <a href="https://m.me/emad.uddin" target="_blank">
+            <a
+              href="https://www.messenger.com/t/100015232537978"
+              target="_blank"
+            >
               Send a message
             </a>
           </article>
           <article className="contact__option">
-            <BsWhatsapp />
+            <BsWhatsapp className="mx-auto" />
             <h4>WhatsApp</h4>
             <h5>+88 01613567054</h5>
             <a href="https://wa.me/+8801613567054" target="_blank">
@@ -61,14 +66,13 @@ function Contact() {
             </a>
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
+        <form ref={formRef} onSubmit={sendEmail}>
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="email" name="email" placeholder="Your Email" />
           <textarea
             name="message"
             rows="7"
             placeholder="Your Message"
-            required
           ></textarea>
           <button
             type="submit"
@@ -77,6 +81,9 @@ function Contact() {
           >
             Send Message <BiSend />
           </button>
+          {successMessage && (
+            <p className="message-feedback">{successMessage}</p>
+          )}
         </form>
       </div>
     </section>

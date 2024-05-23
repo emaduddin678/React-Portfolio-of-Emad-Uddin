@@ -13,13 +13,13 @@ const Nav = () => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
       const scrollPosition = window.pageYOffset;
-      console.log("scrollPosition", scrollPosition);
+      // console.log("scrollPosition", scrollPosition);
 
       sections.forEach((section, index) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        console.log("sectionTop", sectionTop, index);
-        console.log("sectionHeight", sectionHeight, index);
+        // console.log("sectionTop", sectionTop, index);
+        // console.log("sectionHeight", sectionHeight, index);
 
         if (
           scrollPosition >= sectionTop - sectionHeight * 0.5 &&
