@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../assets/Resume-Emad_Uddin.pdf";
+import CV from "../../assets/Emad Uddin - Frontend Developer Resume.pdf";
 
 const CTA = () => {
   return (
