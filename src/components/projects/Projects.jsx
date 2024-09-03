@@ -47,44 +47,7 @@ const Projects = () => {
           </div>
         </article>
         {/* single Project  */}
-        {/* single Project  */}
-        <article className="portfolio_item flex flex-col justify-between">
-          <div className="top">
-            <div className="portfolio_item-img">
-              <img src={PI4} alt="" />
-            </div>
-            <h3 className="leading-5 !mt-3 !mb-3">Task Management System</h3>
-            <p className="text-sm leading-5">
-              A dynamic app built in MERN stack, enables users to efficiently
-              create, organize, and track tasks for enhanced productivity and
-              seamless project management.
-            </p>
-          </div>
-          <div className="flex justify-start gap-2 mt-4 ">
-            <a
-              href="https://github.com/emaduddin678/Task-Management-System.git"
-              className="btn !py-1 !px-2 text-sm leading-7"
-              target="_blank"
-            >
-              Client Code
-            </a>
-            <a
-              href="https://github.com/emaduddin678/Task-management-server.git"
-              className="btn !py-1 !px-2 text-sm leading-7"
-              target="_blank"
-            >
-              Server Code
-            </a>
-            <a
-              href="https://alponayboishakh.com"
-              className="btn btn-primary !py-1 !px-2 text-sm leading-7"
-              target="_blank"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
-        {/* single Project  */}
+
         {/* single Project  */}
         <article className="portfolio_item flex flex-col justify-between">
           <div className="top">
@@ -138,6 +101,44 @@ const Projects = () => {
             </a>
             <a
               href="https://quiz-app-emad.netlify.app"
+              className="btn btn-primary !py-1 !px-2 text-sm leading-7"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        {/* single Project  */}
+        {/* single Project  */}
+        <article className="portfolio_item flex flex-col justify-between">
+          <div className="top">
+            <div className="portfolio_item-img">
+              <img src={PI4} alt="" />
+            </div>
+            <h3 className="leading-5 !mt-3 !mb-3">Task Management System</h3>
+            <p className="text-sm leading-5">
+              A dynamic app built in MERN stack, enables users to efficiently
+              create, organize, and track tasks for enhanced productivity and
+              seamless project management.
+            </p>
+          </div>
+          <div className="flex justify-start gap-2 mt-4 ">
+            <a
+              href="https://github.com/emaduddin678/Task-Management-System.git"
+              className="btn !py-1 !px-2 text-sm leading-7"
+              target="_blank"
+            >
+              Client Code
+            </a>
+            <a
+              href="https://github.com/emaduddin678/Task-management-server.git"
+              className="btn !py-1 !px-2 text-sm leading-7"
+              target="_blank"
+            >
+              Server Code
+            </a>
+            <a
+              href="https://alponayboishakh.com"
               className="btn btn-primary !py-1 !px-2 text-sm leading-7"
               target="_blank"
             >

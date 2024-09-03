@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
+import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,8 +36,8 @@ const Footer = () => {
         <a href="https://www.facebook.com">
           <FiFacebook />
         </a>
-        <a href="https://www.instagram.com">
-          <FiInstagram />
+        <a href="https://www.linkedin.com/in/emad-uddin-60a497204">
+          <BsLinkedin />
         </a>
         <a href="https://www.twitter.com">
           <FiTwitter />
