@@ -3,9 +3,20 @@ import "./Projects.css";
 import PI from "../../assets/fitclub-gym-web-netlify-app.png"
 import PI2 from "../../assets/quiz-app-emad.png"
 import PI3 from "../../assets/alponayboishak.png"
-import PI4 from "../../assets/task-management_miui.png"
+import PI4 from "../../assets/event.png"
 
 const Projects = () => {
+
+   const email = "emaduddin@gmail.com";
+   const password = "123456";
+
+   const copyToClipboard = (text) => {
+     navigator.clipboard.writeText(text).then(() => {
+       alert(`${text} copied to clipboard`);
+     });
+   };
+
+
   return (
     <section id="projects">
       <h5>My Recent Work</h5>
@@ -39,6 +50,54 @@ const Projects = () => {
             </a>
             <a
               href="https://alponayboishakh.com"
+              className="btn btn-primary !py-1 !px-2 text-sm leading-7"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        {/* single Project  */}
+
+        {/* single Project  */}
+        <article className="portfolio_item flex flex-col justify-between">
+          <div className="top ">
+            <div className="portfolio_item-img bg-white pt-2">
+              <img src={PI4} alt="" />
+            </div>
+            <h3 className="leading-5 !mt-3 !mb-3">Event Supply Management</h3>
+            <p className="text-sm leading-5">
+              This website provide accessories for any event by Admin. If you
+              are an admin you can create your client and next you can create
+              event based on your client and{" "}
+              <a className="tex">export an excel sheet of billing</a>.{" "}
+              <button
+                className="bg-slate-500"
+                onClick={() => copyToClipboard(email)}
+              >
+                Copy {email}{" "}
+              </button>{" "}
+              {"   "}{" "}
+              <button
+                className="bg-slate-500"
+                onClick={() => copyToClipboard(password)}
+              >
+                {" "}
+                Copy {password}
+              </button>
+            </p>
+          </div>
+          <div className="flex justify-start gap-2 mt-4 ">
+            <a
+              href="https://github.com/emaduddin678/EventSupplyManagement.git"
+              className="btn !py-1 !px-2 text-sm leading-7"
+              target="_blank"
+            >
+              Client Code
+            </a>
+
+            <a
+              href="https://event-supply.netlify.app/"
               className="btn btn-primary !py-1 !px-2 text-sm leading-7"
               target="_blank"
             >
@@ -101,44 +160,6 @@ const Projects = () => {
             </a>
             <a
               href="https://quiz-app-emad.netlify.app"
-              className="btn btn-primary !py-1 !px-2 text-sm leading-7"
-              target="_blank"
-            >
-              Live Demo
-            </a>
-          </div>
-        </article>
-        {/* single Project  */}
-        {/* single Project  */}
-        <article className="portfolio_item flex flex-col justify-between">
-          <div className="top">
-            <div className="portfolio_item-img">
-              <img src={PI4} alt="" />
-            </div>
-            <h3 className="leading-5 !mt-3 !mb-3">Task Management System</h3>
-            <p className="text-sm leading-5">
-              A dynamic app built in MERN stack, enables users to efficiently
-              create, organize, and track tasks for enhanced productivity and
-              seamless project management.
-            </p>
-          </div>
-          <div className="flex justify-start gap-2 mt-4 ">
-            <a
-              href="https://github.com/emaduddin678/Task-Management-System.git"
-              className="btn !py-1 !px-2 text-sm leading-7"
-              target="_blank"
-            >
-              Client Code
-            </a>
-            <a
-              href="https://github.com/emaduddin678/Task-management-server.git"
-              className="btn !py-1 !px-2 text-sm leading-7"
-              target="_blank"
-            >
-              Server Code
-            </a>
-            <a
-              href="https://alponayboishakh.com"
               className="btn btn-primary !py-1 !px-2 text-sm leading-7"
               target="_blank"
             >
